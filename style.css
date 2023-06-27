@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -39,7 +38,6 @@ nav ul li img {
   margin: 0 15px;
 }
 nav .navbar-right {
-  /* Alteração aqui */
   display: flex;
   align-items: center;
 }
@@ -84,6 +82,22 @@ nav .online::after {
   width: 50px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.left-sidebar {
+  background-color: #cbdffa;
+  flex-basis: 25%;
+  position: sticky;
+  top: 70%;
+  align-self: flex-start;
+}
+
+.rigth-sidebar {
+  background-color: #cbdffa;
+  flex-basis: 25%;
+  position: sticky;
+  top: 70%;
+  align-self: flex-start;
 }
 
 /*# sourceMappingURL=style.css.map */
