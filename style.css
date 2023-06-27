@@ -86,7 +86,6 @@ nav .online::after {
 
 .left-sidebar,
 .right-sidebar {
-  background-color: #cbdffa;
   flex-basis: 25%;
   position: sticky;
   top: 70%;
@@ -95,6 +94,36 @@ nav .online::after {
 
 .main-container {
   flex-basis: 47%;
+}
+
+.imp-links a,
+.shortcut-links a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #626262;
+  width: fit-content;
+}
+.imp-links a:last-child,
+.shortcut-links a:last-child {
+  color: #1876f2;
+}
+
+.imp-links {
+  border-bottom: 1px solid #ccc;
+}
+
+.shortcut-links a img {
+  width: 40px;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.shortcut-links p {
+  margin: 20px 0;
+  color: #626262;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
