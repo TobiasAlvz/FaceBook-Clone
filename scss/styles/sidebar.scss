@@ -1,10 +1,9 @@
-$sidebar-bg-color: #cbdffa;
 $sidebar-width: 25%;
 $sidebar-sticky-top: 70%;
+$main-container-width: 47%;
 
 .left-sidebar,
 .right-sidebar {
-  background-color: $sidebar-bg-color;
   flex-basis: $sidebar-width;
   position: sticky;
   top: $sidebar-sticky-top;
@@ -12,5 +11,35 @@ $sidebar-sticky-top: 70%;
 }
 
 .main-container {
-  flex-basis: 47%;
+  flex-basis: $main-container-width;
+}
+
+.imp-links a,
+.shortcut-links a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #626262;
+  width: fit-content;
+
+  &:last-child {
+    color: #1876f2;
+  }
+}
+
+.imp-links {
+  border-bottom: 1px solid #ccc;
+}
+
+.shortcut-links a img {
+  width: 40px;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.shortcut-links p {
+  margin: 20px 0;
+  color: #626262;
+  font-weight: 500;
 }
