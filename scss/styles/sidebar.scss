@@ -4,8 +4,8 @@ $main-container-width: 47%;
 
 .left-sidebar,
 .right-sidebar {
-  flex-basis: $sidebar-width;
   position: sticky;
+  flex-basis: $sidebar-width;
   top: $sidebar-sticky-top;
   align-self: flex-start;
 }
