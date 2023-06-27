@@ -86,8 +86,8 @@ nav .online::after {
 
 .left-sidebar,
 .right-sidebar {
-  flex-basis: 25%;
   position: sticky;
+  flex-basis: 25%;
   top: 70%;
   align-self: flex-start;
 }
