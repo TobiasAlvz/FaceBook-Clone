@@ -1,14 +1,16 @@
-.left-sidebar {
-  background-color: #cbdffa;
-  flex-basis: 25%;
+$sidebar-bg-color: #cbdffa;
+$sidebar-width: 25%;
+$sidebar-sticky-top: 70%;
+
+.left-sidebar,
+.right-sidebar {
+  background-color: $sidebar-bg-color;
+  flex-basis: $sidebar-width;
   position: sticky;
-  top: 70%;
+  top: $sidebar-sticky-top;
   align-self: flex-start;
 }
-.rigth-sidebar {
-  background-color: #cbdffa;
-  flex-basis: 25%;
-  position: sticky;
-  top: 70%;
-  align-self: flex-start;
+
+.main-container {
+  flex-basis: 47%;
 }
