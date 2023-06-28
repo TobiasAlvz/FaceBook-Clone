@@ -1,0 +1,76 @@
+$sidebar-width: 25%;
+$sidebar-sticky-top: 70%;
+$main-container-width: 47%;
+$primary-color: #1876f2;
+
+.left-sidebar,
+.right-sidebar {
+  flex-basis: $sidebar-width;
+  top: $sidebar-sticky-top;
+  align-self: flex-start;
+}
+
+.right-sidebar {
+  position: sticky;
+  background-color: fff;
+  padding: 20px;
+  border-radius: 4px;
+  color: $primary-color;
+}
+
+.main-container {
+  flex-basis: $main-container-width;
+}
+
+.imp-links a,
+.shortcut-links a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #626262;
+  width: fit-content;
+
+  &:last-child {
+    color: #1876f2;
+  }
+}
+
+.imp-links {
+  border-bottom: 1px solid #ccc;
+}
+
+.shortcut-links a img {
+  width: 40px;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.shortcut-links p {
+  margin: 20px 0;
+  color: #626262;
+  font-weight: 500;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.sidebar-title h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sidebar-title a {
+  text-decoration: none;
+  color: $primary-color;
+  font-size: 12px;
+}
+
+.event {
+  display: flex;
+  font-size: 14px;
+}
