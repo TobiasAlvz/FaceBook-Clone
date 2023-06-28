@@ -5,6 +5,7 @@ $primary-color: #1876f2;
 
 .left-sidebar,
 .right-sidebar {
+  padding: 20px;
   flex-basis: $sidebar-width;
   top: $sidebar-sticky-top;
   align-self: flex-start;
@@ -31,7 +32,7 @@ $primary-color: #1876f2;
   width: fit-content;
 
   &:last-child {
-    color: #1876f2;
+    color: $primary-color;
   }
 }
 
@@ -56,56 +57,56 @@ $primary-color: #1876f2;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 18px;
-}
 
-.sidebar-title h4 {
-  font-size: 16px;
-  font-weight: 600;
-}
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-.sidebar-title a {
-  text-decoration: none;
-  color: $primary-color;
-  font-size: 12px;
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 12px;
+  }
 }
 
 .event {
   display: flex;
   font-size: 14px;
   margin-bottom: 20px;
-}
 
-.left-event {
-  border-radius: 10px;
-  height: 65px;
-  width: 65px;
-  margin-right: 15px;
-  padding-top: 10px;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.486);
-}
+  .left-event {
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.486);
 
-.left-event p {
-  font-size: 12px;
-}
+    p {
+      font-size: 12px;
+    }
 
-.left-event a {
-  font-size: 12px;
-  text-decoration: none;
-}
+    a {
+      font-size: 12px;
+      text-decoration: none;
+    }
 
-.left-event span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: $primary-color;
-  color: #fff;
-  font-size: 10px;
-  padding: 4px 0;
-  text-align: center;
+    span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: $primary-color;
+      color: #fff;
+      font-size: 10px;
+      padding: 4px 0;
+      text-align: center;
+    }
+  }
 }
 
 .sidebar-ads {
@@ -118,15 +119,29 @@ $primary-color: #1876f2;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+
+  .online {
+    img {
+      width: 40px;
+      border-radius: 50%;
+      margin-left: 15px;
+    }
+
+    &::after {
+      top: unset;
+      bottom: 4px;
+    }
+  }
 }
 
-.online-left .online img {
-  width: 40px;
-  border-radius: 50%;
-  margin-left: 15px;
-}
+@media (max-width: 768px) {
+  .left-sidebar,
+  .right-sidebar {
+    flex-basis: 100%;
+    top: unset;
+  }
 
-.online-left .online::after {
-  top: unset;
-  bottom: 4px;
+  .main-container {
+    flex-basis: 100%;
+  }
 }
