@@ -5,6 +5,10 @@
   font-family: "poppins", sans-serif;
 }
 
+body {
+  background-color: #efefef;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -93,6 +97,10 @@ nav .online::after {
 
 .right-sidebar {
   position: sticky;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  color: #626262;
 }
 
 .main-container {
@@ -145,6 +153,11 @@ nav .online::after {
   text-decoration: none;
   color: #1876f2;
   font-size: 12px;
+}
+
+.event {
+  display: flex;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
