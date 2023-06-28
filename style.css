@@ -96,7 +96,6 @@ nav .online::after {
 }
 
 .right-sidebar {
-  position: sticky;
   background-color: #fff;
   padding: 20px;
   border-radius: 4px;
@@ -192,6 +191,29 @@ nav .online::after {
   font-size: 10px;
   padding: 4px 0;
   text-align: center;
+}
+
+.sidebar-ads {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.online-left {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.online-left .online img {
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.online-left .online::after {
+  top: unset;
+  bottom: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
