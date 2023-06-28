@@ -15,32 +15,40 @@
   </head>
   <body>
 
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary position-fixed w-100">
-      <div class="navbar-brand">
-        <img src="img/logo.png" alt="Logo TipsFace" class="logo" />
-      </div>
-      <div class="navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <img src="img/notification.png" alt="Notificação" class="nav-link" />
-          </li>
-          <li class="nav-item">
-            <img src="img/inbox.png" alt="Caixa de entrada" class="nav-link" />
-          </li>
-          <li class="nav-item">
-            <img src="img/video.png" alt="Vídeo" class="nav-link" />
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary position-sticky">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo TipsFace" class="logo" />
+        </a>
 
-      <div class="navbar-right">
-        <div class="search-box">
-          <img src="img/search.png" alt="Buscando" class="search-icon" />
-          <input type="text" class="form-control" placeholder="Buscar..." />
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="img/notification.png" alt="Notificação" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="img/inbox.png" alt="Caixa de entrada" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="img/video.png" alt="Vídeo" />
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="nav-user-icon online">
-          <img src="img/profile-pic.png" alt="Perfil" class="user-icon" />
+
+        <div class="navbar-right">
+          <div class="search-box">
+            <img src="img/search.png" alt="Buscando" class="search-icon" />
+            <input type="text" class="form-control" placeholder="Buscar..." />
+          </div>
+          <div class="nav-user-icon online">
+            <img src="img/profile-pic.png" alt="Perfil" class="user-icon" />
+          </div>
         </div>
       </div>
     </nav>
@@ -49,25 +57,53 @@
 
       <aside class="left-sidebar">
         <div class="imp-links">
-          <a href="#"><img src="img/news.png" alt>Noticias</a>
-          <a href="#"><img src="img/friends.png" alt>Amigos</a>
-          <a href="#"><img src="img/group.png" alt>Grupos</a>
-          <a href="#"><img src="img/marketplace.png" alt>Loja</a>
-          <a href="#"><img src="img/watch.png" alt>Videos</a>
-          <a href="#"> Ver Mais</a>
+          <a href="#" class="d-flex align-items-center">
+            <img src="img/news.png" alt="Notícias" />
+            Notícias
+          </a>
+          <a href="#" class="d-flex align-items-center">
+            <img src="img/friends.png" alt="Amigos" />
+            Amigos
+          </a>
+          <a href="#" class="d-flex align-items-center">
+            <img src="img/group.png" alt="Grupos" />
+            Grupos
+          </a>
+          <a href="#" class="d-flex align-items-center">
+            <img src="img/marketplace.png" alt="Loja" />
+            Loja
+          </a>
+          <a href="#" class="d-flex align-items-center">
+            <img src="img/watch.png" alt="Vídeos" />
+            Vídeos
+          </a>
+          <a href="#" class="d-flex align-items-center">
+            Ver Mais
+          </a>
         </div>
 
         <div class="shortcut-links">
           <p>Meus Atalhos</p>
-          <a href="#"><img src="img/shortcut-1.png" alt>Camal</a>
-          <a href="#"><img src="img/shortcut-2.png" alt>Full Stack</a>
-          <a href="#"><img src="img/shortcut-3.png" alt>@tobias_alvz</a>
-          <a href="#"><img src="img/shortcut-4.png" alt>.com</a>
+          <a href="#" class="d-flex align-items-center">
+            <img src="img/shortcut-1.png" alt="Atalho 1" />
+            Camal
+          </a>
+          <a href="#" class="d-flex align-items-center">
+            <img src="img/shortcut-2.png" alt="Atalho 2" />
+            Full Stack
+          </a>
+          <a href="#" class="d-flex align-items-center">
+            <img src="img/shortcut-3.png" alt="Atalho 3" />
+            @tobias_alvz
+          </a>
+          <a href="#" class="d-flex align-items-center">
+            <img src="img/shortcut-4.png" alt="Atalho 4" />
+            .com
+          </a>
         </div>
       </aside>
 
       <div class="main-container"></div>
-
       <aside class="right-sidebar">
         <div class="sidebar-title">
           <h4>Eventos</h4>
@@ -80,8 +116,8 @@
             <span>Agosto</span>
           </div>
           <div class="right-event">
-            <h3>Aniversario</h3>
-            <p><i class="fa-solid fa-location-dot"></i>João</p>
+            <h3>Aniversário</h3>
+            <p><i class="fas fa-map-marker-alt"></i> João</p>
             <a href="#">Mais Informações</a>
           </div>
         </div>
@@ -92,9 +128,40 @@
           </div>
           <div class="right-event">
             <h3>Culto</h3>
-            <p><i class="fa-solid fa-location-dot"></i>A Jesus</p>
+            <p><i class="fas fa-map-marker-alt"></i> A Jesus</p>
             <a href="#">Mais Informações</a>
           </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Patrocinados</h4>
+          <a href="#">Fechar</a>
+        </div>
+        <img src="img/advertisement.png" class="sidebar-ads" alt>
+
+        <div class="sidebar-title">
+          <h4>Conversas</h4>
+          <a href="#">Fechar</a>
+        </div>
+
+        <div class="online-left">
+          <figure class="online">
+            <img src="img/member-1.png" alt>
+          </figure>
+          <p>Marcos</p>
+        </div>
+
+        <div class="online-left">
+          <figure class="online">
+            <img src="img/member-2.png" alt>
+          </figure>
+          <p>Marcos</p>
+        </div>
+
+        <div class="online-left">
+          <figure class="online">
+            <img src="img/member-3.png" alt>
+          </figure>
+          <p>Julia</p>
         </div>
       </aside>
 
